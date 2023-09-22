@@ -30,9 +30,7 @@
 	var __oldOnloadFunc = window.onload
     window.onload = () => {
         if(__oldOnloadFunc != null) __oldOnloadFunc();
-        alert('test')
-        alert($('.pop-live-small-mode') == undefined)
-        alert($)
+	CleanBiliBili.clean()
     }
 	
 	
