@@ -30,8 +30,9 @@
 
 	var __oldOnloadFunc = window.onload
     window.onload = () => {
+		alert('start')
         if(__oldOnloadFunc != null) __oldOnloadFunc();
-	CleanBiliBili.clean()
+		CleanBiliBili.clean()
     }
 	
 	
