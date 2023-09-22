@@ -8,6 +8,7 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bilibili.com
 // @require      https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js
 // @updateURL    https://raw.githubusercontent.com/SunRt233/CleanBilibili/main/CleanBilibili.js
+// @downloadURL  https://raw.githubusercontent.com/SunRt233/CleanBilibili/main/CleanBilibili.js
 // @grant        unsafeWindows
 // ==/UserScript==
 
