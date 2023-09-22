@@ -7,7 +7,7 @@
 // @match        https://www.bilibili.com/video/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bilibili.com
 // @require      https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js
-// @grant        none
+// @grant        unsafeWindows
 // ==/UserScript==
 
 (function() {
@@ -21,12 +21,19 @@
     	],
 		clean: function() {
 			CleanBiliBili.targets.forEach(e => {
-				jQuery(e).style.display = 'none'
+				$(e).style.display = 'none'
 			})
 		}
 	}
 
-	jQuery(document).ready(() => CleanBiliBili.clean())
+	var __oldOnloadFunc = window.onload
+    window.onload = () => {
+        if(__oldOnloadFunc != null) __oldOnloadFunc();
+        alert('test')
+        alert($('.pop-live-small-mode') == undefined)
+        alert($)
+    }
+	
 	
     // Your code here...
 })();
