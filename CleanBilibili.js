@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         哔哩清洁器
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  try to take over the world!
 // @author       SunRt233
 // @match        https://www.bilibili.com/video/*
